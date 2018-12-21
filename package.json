@@ -1,11 +1,11 @@
 {
   "name": "vue-cli-plugin-movefiles",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "vue-cli 3 plugin to move files",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+ssh://git@github.com:ybg555/vue-cli-plugin-movefiles.git"
   },
   "keywords": [
     "moveFiles",
@@ -18,9 +18,9 @@
   "author": "bigang.ybg",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/ybg555/vue-cli-plugin-movefiles/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/ybg555/vue-cli-plugin-movefiles",
   "publishConfig": {
     "access": "public"
   },

@@ -18,12 +18,9 @@ vue add movefiles
 
 ### Usages
 
-package.json & vue.config.js 分别中配置
+1. package.json & vue.config.js 分别配置
 ```json
 "scripts": {
-  "serve": "vue-cli-service serve",
-  "build": "vue-cli-service build",
-  "lint": "vue-cli-service lint",
   "movefiles": "vue-cli-service movefiles",
 },
 
@@ -35,10 +32,19 @@ pluginOptions: {
 },
 ```
 
-command line
+2. package.json
+```json
+"scripts": {
+  "testmf": "vue-cli-service movefiles --source=./dist/* --dest=./testhome",
+  "prodmf": "vue-cli-service movefiles --source=./dist/* --dest=./prodhome",
+}
+```
+
+3. command line
 ```shell
 npx vue-cli-service movefiles --source='./dist/*' --dest='./home'
 ```
+
 ### Issues
 
 Submit the issues if you find any bug or have any suggestion.
