@@ -21,7 +21,7 @@ Vue.use(HmUi);
 ```
 
 ## 2.组件列表
-[list](../leftSideBar.md ':include')
+[list](../sidebar.md ':include')
 
 ## 3.组件开发流程
 #### 评审阶段
