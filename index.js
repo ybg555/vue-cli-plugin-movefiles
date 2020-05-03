@@ -9,16 +9,16 @@ module.exports = (api, projectOptions) => {
       '--dest': `dest dir`,
     }
   }, (args) => {
-    let options = projectOptions.pluginOptions.movefiles;
-    const source = options && options.source || args.source;
-    const dest = options && options.dest || args.dest;
+    let options = projectOptions.pluginOptions && projectOptions.pluginOptions.movefiles
+    const source = options && options.source || args.source
+    const dest = options && options.dest || args.dest
     // console.info('command line args', args.source, args.dest);
     // console.log('vue.config', options);
     if (source && dest) {
-      shell.mkdir('-p', dest);
-      shell.cp('-Rf', source, dest);
+      shell.mkdir('-p', dest)
+      shell.cp('-Rf', source, dest)
     } else {
-      console.error('error: copy config <source> <dest> is necessary');
+      console.error('error: copy config <source> <dest> is necessary')
     }
   });
 }
